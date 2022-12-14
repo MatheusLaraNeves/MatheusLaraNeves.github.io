@@ -3,7 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="../assets/img/agrofacica.icon.jpg" type="image/x-icon">
 
@@ -61,47 +71,106 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
-                <div class="home__container container grid">
-                    <img src="../assets/img/introducao/introducao.jpeg" alt="" class="home__img">
+                <div class="container grid">
+                    <img src="../assets/img/introducao.jpeg" alt="" class="home__img">
 
                     <div class="home__data">
                         <h1 class="home__title">
-                            Introdução
+                            Propriedades dos fluídos
                         </h1>
                         <p class="home__description">
-                            O estudo da “Hidráulica” é essencial para analisar qualquer sistema no qual a água produza trabalho. Para tanto, o mesmo
-                            deve saber planejar e projetar estruturas de captação, condução e armazenamento de água. A água é um recurso natural
-                            importante para qualquer atividade agrícola. É importante que o profissional da área de ciências agrárias saiba utilizar
-                            este recurso com eficiência. Nesta sessão será apresentada uma breve introdução sobre do movimento dos fluidos,
-                            especificamente da água. O movimento dos fluidos pode ser estudado da mesma forma que o movimento de corpos sólidos
-                            usando-se as leis fundamentais da física juntamente com as propriedades físicas dos fluidos. Nesta aula foram levantadas
-                            algumas informações básicas que servirão de subsídios para a contextualização da hidráulica em sistemas de abastecimento
-                            de água e sistemas de irrigação aportadas no conteúdo programático.
-                        </p>
-                    </div>
-                    
-                </div>
-                <div class="container grid">
-                    <div class="home__data">
-                        <h1 class="home__title">
-                            Conceito de Hidráulica
-                        </h1>
-                        <p class="home__description">
-                            A palavra Hidráulica significa condução de água. Do grego “hÿdor” significa água e “aulos” significa condução.
-                            Atualmente a “Hidráulica” tem um significado muito mais geral, pois trata do estudo do comportamento dos líquidos (em
-                            especial da água) em repouso ou em movimento.
-                        </p>
-                        <h1>Subdivisões da Hidráulica</h1>
-                        <p class="home__description">
-                            A Hidráulica pode ser dividida em: <br>
-                            - Hidrostática;<br>
-                            - Hidrodinâmica. <br><br>
-                            A estática dos fluidos ou “Hidrostática” estuda as condições de equilíbrio dos líquidos sob a ação de forças exteriores,
-                            principalmente da gravidade. A dinâmica ou “Hidrodinãmica” estuda os fluidos em movimento sob a influência de forças.
+                            Fluido é qualquer substância capaz de deformar-se continuamente e assumir a forma do recipiente que a contém, isto é,
+                            escoa, sob ação de uma força tangencial por menor que ele seja. O conceito de fluidos envolve líquidos e gases, logo, é
+                            necessário distinguir estas duas classes: Líquidos é aquela substância que adquire a forma do recipiente que a contém
+                            possuindo volume definido e é, praticamente, incompressível. Já o gás é uma substância que ao preencher o recipiente
+                            não forma superfície livre e não tem volume definido, além de serem compressíveis.
                         </p>
                     </div>
                 </div>
-            </section>
+                
+                    <div class="questions__container container grid">
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <a href="../html/fluidos/massaespecifica.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Massa específica (&rho;)
+                                    </h3>
+                                </header>
+                                </a>    
+                            </div>
+
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Peso específico (&gamma;)
+                                    </h3>
+                                </header>
+    
+                            </div>
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Peso específico relativo (&gamma;r)
+                                    </h3>
+                                </header>
+                            </div>
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Coesão, adesão, tensão superficial
+                                    </h3>
+                                </header>
+                            </div>
+                        </div>
+
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Viscosidade
+                                    </h3>
+                                </header>
+                                
+                            </div>
+
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Viscosidade dinâmica (&mu;)
+                                    </h3>
+                                </header>
+    
+                            </div>
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Viscosidade cinemática (v)
+                                    </h3>
+                                </header>
+                            </div>
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Pressão de vapor (Pv)
+                                    </h3>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+
+                                            
+
+                
             
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
@@ -174,5 +243,7 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="../assets/js/main.js"></script>
+
+        
     </body>
 </html>

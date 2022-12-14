@@ -3,7 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="../assets/img/agrofacica.icon.jpg" type="image/x-icon">
 
@@ -11,7 +21,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../../assets/css/styles.css">
 
         <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
     </head>
@@ -61,44 +71,28 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
-                <div class="home__container container grid">
-                    <img src="../assets/img/introducao/introducao.jpeg" alt="" class="home__img">
+                <div class="container grid">
 
-                    <div class="home__data">
-                        <h1 class="home__title">
-                            Introdução
-                        </h1>
-                        <p class="home__description">
-                            O estudo da “Hidráulica” é essencial para analisar qualquer sistema no qual a água produza trabalho. Para tanto, o mesmo
-                            deve saber planejar e projetar estruturas de captação, condução e armazenamento de água. A água é um recurso natural
-                            importante para qualquer atividade agrícola. É importante que o profissional da área de ciências agrárias saiba utilizar
-                            este recurso com eficiência. Nesta sessão será apresentada uma breve introdução sobre do movimento dos fluidos,
-                            especificamente da água. O movimento dos fluidos pode ser estudado da mesma forma que o movimento de corpos sólidos
-                            usando-se as leis fundamentais da física juntamente com as propriedades físicas dos fluidos. Nesta aula foram levantadas
-                            algumas informações básicas que servirão de subsídios para a contextualização da hidráulica em sistemas de abastecimento
-                            de água e sistemas de irrigação aportadas no conteúdo programático.
-                        </p>
-                    </div>
-                    
-                </div>
                 <div class="container grid">
                     <div class="home__data">
-                        <h1 class="home__title">
-                            Conceito de Hidráulica
-                        </h1>
+                        <h1>Massa específica (&rho;)</h1>
                         <p class="home__description">
-                            A palavra Hidráulica significa condução de água. Do grego “hÿdor” significa água e “aulos” significa condução.
-                            Atualmente a “Hidráulica” tem um significado muito mais geral, pois trata do estudo do comportamento dos líquidos (em
-                            especial da água) em repouso ou em movimento.
+                            A massa específica, na língua inglesa denominada de <i>density</i> é definida como a massa contida em uma unidade de volume
+                            do fluido. Matematicamente, podemos calcular a massa específica através da relação entre a massa do fluido e o volume
+                            por ele ocupado. <br>
                         </p>
-                        <h1>Subdivisões da Hidráulica</h1>
+                        <h3>
+                            $$\rho = \frac{m}{V}$$
+                        </h3>
                         <p class="home__description">
-                            A Hidráulica pode ser dividida em: <br>
-                            - Hidrostática;<br>
-                            - Hidrodinâmica. <br><br>
-                            A estática dos fluidos ou “Hidrostática” estuda as condições de equilíbrio dos líquidos sob a ação de forças exteriores,
-                            principalmente da gravidade. A dinâmica ou “Hidrodinãmica” estuda os fluidos em movimento sob a influência de forças.
+                            Em que, $\rho$ é a massa específica, <i>m</i> representa a massa da substância e <i>V</i> o volume por ela ocupado. No Sistema
+                            Internacional de Unidades (SI), a massa é quantificada em kg e o volume em $m^3$, assim, a unidade de massa específica é kg
+                            $m^{-3}$.
                         </p>
+                        <h3>Exemplos</h3><br>
+                        <li>Água: $\rho$ = 1000 kg $m^{-3}$ = 1 g $cm^{-3}$</li>
+                        <li>Mercúrio: $\rho$ = 13600 kg $m^{-3}$ = 13,6 g $cm^{-3}$</li>
+                        <li>Ar: $\rho$ = 1,2 kg $m^{-3}$ = 0,0012 g $cm^{-3}$</li>
                     </div>
                 </div>
             </section>
@@ -170,9 +164,11 @@
         </a>
 
         <!--=============== SCROLL REVEAL ===============-->
-        <script src="../assets/js/scrollreveal.min.js"></script>
+        <script src="../../assets/js/scrollreveal.min.js"></script>
         
         <!--=============== MAIN JS ===============-->
-        <script src="../assets/js/main.js"></script>
+        <script src="../../assets/js/main.js"></script>
+
+        
     </body>
 </html>
