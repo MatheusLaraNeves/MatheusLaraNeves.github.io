@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+
+        <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../index.html" class="nav__link active-link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#products" class="nav__link" >Motivação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#faqs" class="nav__link">Conteúdo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#contact" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="container grid">
+                    <div class="home__data">
+                        <h1>Peso específico (&gamma;)</h1>
+                        <p class="home__description">
+                            O peso específico, denominado de <i>specific weight</i> é definido como sendo o peso da unidade de volume de um fluido.
+                            Assim, ele representa a força exercida pela atração gravitacional da terra sobre a unidade de volume do fluido. A
+                            relação estabelecida, em que P é o peso de fluido contido no volume V é <br>
+                        </p>
+                        <h3>
+                            $$\gamma = \frac{P}{V}$$
+                        </h3>
+                        <p class="home__description">
+                            Em que, $\gamma$ é o peso específico em kgf$m^{-3}$, P é o peso em kgf e V o volume em $m^{3}$ pelo Sistema
+                            Internacional de Unidades (SI).
+                        </p>
+                        <h3>Exemplos</h3><br>
+                        <li>Água: $\gamma$ = 1000 kgf $m^{-3}$ = 1000 N $m^{-3}$</li>
+                        <li>Mercúrio: $\gamma$ = 13600 kgf $m^{-3}$ = 136000 N $m^{-3}$</li>
+                        <li>Ar: $\gamma$ = 1,2 kgf $m^{-3}$ = 12 N $m^{-3}$</li>
+                        <br>
+                        <h3>Observação:</h3>
+                        <p class="home__description">
+                            $$\gamma = \frac{P}{V} = \frac{m \times g}{V} \therefore \rho = \frac{m}{V} \therefore \gamma = \rho \times g$$
+                        </p>
+                    </div>
+                </div><br>
+                <div class="wrapper__container container home__data">
+                    <h2>Cálculo de Peso Específico (&gamma;)</h2><br>
+                    <form id="fmr1" action="#" class="wrapper__form">
+                        <div class="home__description">
+                            <p>Peso [kgf]</p>
+                            <input class="wrapper__input" id="peso" type="text" value="1">
+                        </div>
+                        <div class="home__description">
+                            <p>Volume [m³]</p>
+                            <input class="wrapper__input" id="volume" type="text" value="1">
+                        </div>
+                        <div class="resultado">
+                            <h4 id="resultado">Peso específico (&gamma;) = </h4>
+                        </div>
+                        <br>
+                            <button type="button" class="button button--flex" onclick="calcular()">Calcular peso específico</button>
+                    </form>
+                </div>
+            </section>
+        
+            
+        <!--==================== FOOTER ====================-->
+        
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                    </a>
+
+                    
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço FACICA</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                        <li class="footer__information">Campos Gerais - MG</li>
+                        <li class="footer__information">37160-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/" class="footer__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">NOME-DO-ORIENTADOR</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+        </footer>
+        
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        <script src="../../assets/js/pesoespecifico/pesoespecifico.js"></script>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../../assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../../assets/js/main.js"></script>
+
+        
+    </body>
+</html>
