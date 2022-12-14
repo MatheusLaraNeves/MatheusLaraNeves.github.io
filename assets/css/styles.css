@@ -323,6 +323,8 @@ the website, in dark theme
 
 .home__description{
   margin-bottom: var(--mb-2-5);
+  text-align: justify;
+  text-justify: auto;
 }
 
 .home__social{
@@ -982,6 +984,8 @@ the website, in dark theme
   }
   .home__description{
     padding-right: 7rem;
+    text-align: justify;
+    text-justify: auto;
   }
 
   .about__img{
