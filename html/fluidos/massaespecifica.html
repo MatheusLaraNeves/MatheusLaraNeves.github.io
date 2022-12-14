@@ -29,26 +29,26 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="../index.html" class="nav__logo">
+                <a href="../../index.html" class="nav__logo">
                     <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="../index.html" class="nav__link active-link">Início</a>
+                            <a href="../../index.html" class="nav__link active-link">Início</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../index.html#about" class="nav__link">Sobre</a>
+                            <a href="../../index.html#about" class="nav__link">Sobre</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../index.html#products" class="nav__link" >Motivação</a>
+                            <a href="../../index.html#products" class="nav__link" >Motivação</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../index.html#faqs" class="nav__link">Conteúdo</a>
+                            <a href="../../index.html#faqs" class="nav__link">Conteúdo</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../index.html#contact" class="nav__link">Contato</a>
+                            <a href="../../index.html#contact" class="nav__link">Contato</a>
                         </li>
                     </ul>
 
@@ -70,9 +70,7 @@
 
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <div class="container grid">
-
+            <section class="home">
                 <div class="container grid">
                     <div class="home__data">
                         <h1>Massa específica (&rho;)</h1>
@@ -94,16 +92,38 @@
                         <li>Mercúrio: $\rho$ = 13600 kg $m^{-3}$ = 13,6 g $cm^{-3}$</li>
                         <li>Ar: $\rho$ = 1,2 kg $m^{-3}$ = 0,0012 g $cm^{-3}$</li>
                     </div>
+                </div><br>
+                <div class="wrapper__container container">
+                    <h2>Cálculo de Massa Específica (&rho;)</h2><br>
+                    <form id="fmr1" action="#" class="wrapper__form">
+                        <div class="home__description">
+                            <p>Massa [kg]</p>
+                            <input class="wrapper__input" id="massa" type="text" value="1">
+                        </div>
+                        <div class="home__description">
+                            <p>Volume [m³]</p>
+                            <input class="wrapper__input" id="volume" type="text" value="1">
+                        </div>
+                        <div class="resultado">
+                            <p id="resultado">Massa específica (&rho;) = </p>
+                        </div>
+                        <div class="volume">
+                            <button type="button" class="button button--flex" onclick="calcular()">Calcular massa específica</button>
+                    </form>
                 </div>
             </section>
+        
             
         <!--==================== FOOTER ====================-->
+        
         <footer class="footer section">
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
                         <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
                     </a>
+
+                    
                 </div>
 
                 <div class="footer__content">
@@ -158,11 +178,12 @@
             <p class="footer__copy">&#169; Matheus Lara Neves.</p>
         </footer>
         
+        
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
-
+        <script src="../../assets/js/massaespecifica/massaespecifica.js"></script>
         <!--=============== SCROLL REVEAL ===============-->
         <script src="../../assets/js/scrollreveal.min.js"></script>
         

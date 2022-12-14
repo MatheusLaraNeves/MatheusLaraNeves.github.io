@@ -138,7 +138,7 @@ Color changes in some parts of
 the website, in dark theme 
 ==========*/
 
-.dark-theme .steps__bg,
+.dark-theme .steps__bg, .wrapper,
 .dark-theme .questions{
   background-color: var(--first-color-dark);
 }
@@ -443,7 +443,34 @@ the website, in dark theme
   color: var(--first-color);
   margin-top: .15rem;
 }
+/*========== WRAPPER ===============*/
 
+.wrapper__bg{
+  background-color: var(--first-color);
+  padding: 3rem 2rem 2rem;
+  border-radius: 1rem;
+}
+
+.wrapper__container{
+  width: 400px;
+  gap: 2rem;
+  padding-top: 1rem;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.wrapper__title{
+  color: #FFF;
+}
+
+.wrapper__description{
+  font-size: var(--small-font-size);
+  color: #FFF;
+}
+.wrapper__input{
+  width: 20%;
+}
 /*=============== STEPS ===============*/
 .steps__bg{
   background-color: var(--first-color);
@@ -872,8 +899,11 @@ the website, in dark theme
   .home__title{
     font-size: var(--h1-font-size);
   }
-
-  .steps__bg{
+  .wrapper{
+    padding: 2rem 1rem;
+  }
+  
+  .steps__bg, .wrapper__bg{
     padding: 2rem 1rem;
   }
   .steps__card{
@@ -888,7 +918,7 @@ the website, in dark theme
 
 /* For medium devices */
 @media screen and (min-width: 576px){
-  .steps__container{
+  .steps__container, .wrapper__container{
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -992,10 +1022,10 @@ the website, in dark theme
     width: 380px;
   }
 
-  .steps__container{
+  .steps__container, .wrapper__container{
     grid-template-columns: repeat(3, 1fr);
   }
-  .steps__bg{
+  .steps__bg, .wrapper__bg{
     padding: 3.5rem 2.5rem;
   }
   .steps__card-title{
