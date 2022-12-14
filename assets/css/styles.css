@@ -169,9 +169,11 @@ the website, in dark theme
 }
 
 .container{
-  max-width: 968px;
+  max-width: 980px;
   margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-right: var(--mb-1-5)
+  
+  
 }
 
 .grid{
