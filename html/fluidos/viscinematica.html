@@ -75,42 +75,39 @@
                     <div class="home__data">
                         <h1>Viscosidade cinemática (v)</h1>
                         <p class="home__description">
-                            Página em construção <br>
+                            A Viscosidade cinemática (v) é definida como a relação entre a viscosidade dinâmica e a massa específica do fluído.<br>
                         </p>
-                        <!--
+                        
                         <h3>
-                            $$\rho = \frac{m}{V}$$
+                            $$v = \frac{\mu}{\rho}$$
                         </h3>
                         <p class="home__description">
-                            Em que, $\rho$ é a massa específica, <i>m</i> representa a massa da substância e <i>V</i> o volume por ela ocupado. No Sistema
-                            Internacional de Unidades (SI), a massa é quantificada em kg e o volume em $m^3$, assim, a unidade de massa específica é kg
-                            $m^{-3}$.
+                            Em que, v é a viscosidade cinemática, $\mu$ representa a viscosidade dinâmica e $\rho$ a massa específica. 
                         </p>
-                        <h3>Exemplos</h3><br>
-                        <li>Água: $\rho$ = 1000 kg $m^{-3}$ = 1 g $cm^{-3}$</li>
-                        <li>Mercúrio: $\rho$ = 13600 kg $m^{-3}$ = 13,6 g $cm^{-3}$</li>
-                        <li>Ar: $\rho$ = 1,2 kg $m^{-3}$ = 0,0012 g $cm^{-3}$</li>
+                        <li>No Sistema Internacional (SI): m$^{2}$ s$^{-1}$</li><br>
+                        <h3>Observação:</h3>
+                        <p class="home__description">A viscosidade é medida por um equipamento chamado <b>Viscosímetro</b>.</p>
                     </div>
                 </div><br>
                 <div class="wrapper__container container home__data">
-                    <h2>Cálculo de Massa Específica (&rho;)</h2><br>
+                    <h2>Cálculo de Viscosidade cinemática (v)</h2><br>
                     <form id="fmr1" action="#" class="wrapper__form">
                         <div class="home__description">
-                            <p>Massa [kg]</p>
-                            <input class="wrapper__input" id="massa" type="text" value="1">
+                            <p>Viscosidade dinâmica [Ns/m²]</p>
+                            <input class="wrapper__input" id="visdinamica" type="text" value="1">
                         </div>
                         <div class="home__description">
-                            <p>Volume [m³]</p>
-                            <input class="wrapper__input" id="volume" type="text" value="1">
+                            <p>Massa específica [kg/m³]</p>
+                            <input class="wrapper__input" id="massaespecifica" type="text" value="1">
                         </div>
                         <div class="resultado">
-                            <h4 id="resultado">Massa específica (&rho;) = </h4>
+                            <h4 id="resultado">Viscosidade cinemática (v) = </h4>
                         </div>
                         <br>
-                            <button type="button" class="button button--flex" onclick="calcular()">Calcular massa específica</button>
+                            <button type="button" class="button button--flex" onclick="calcular()">Calcular viscosidade cinemática</button>
                     </form>
                 </div>
-            </section>-->
+            </section>
         
             
         <!--==================== FOOTER ====================-->
@@ -182,7 +179,7 @@
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
-        <script src="../../assets/js/massaespecifica/massaespecifica.js"></script>
+        <script src="../../assets/js/viscinematica/viscinematica.js"></script>
         <!--=============== SCROLL REVEAL ===============-->
         <script src="../../assets/js/scrollreveal.min.js"></script>
         

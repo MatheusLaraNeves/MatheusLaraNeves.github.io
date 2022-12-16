@@ -183,7 +183,9 @@ the website, in dark theme
 .main{
   overflow: hidden; /*For animation*/
 }
-
+.tg{
+  text-align: center;
+}
 /*=============== HEADER ===============*/
 .header{
   width: 100%;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,42 +75,45 @@
                     <div class="home__data">
                         <h1>Viscosidade dinâmica (&mu;)</h1>
                         <p class="home__description">
-                            Página em construção<br>
+                            A viscosidade dinâmica é definida como a força de cisalhamento, por unidade de área, (ou tensão de cisalhamento),
+                            requerida para arrastar uma camada de fluido com velocidade unitária para outra camada afastada a uma distância
+                            unitária. A viscosidade dinâmica representa a força por unidade de área necessária ao arrastamento de uma camada de um
+                            fluído em relação à outra camada do mesmo fluído<br>
                         </p>
-                        <!--
                         <h3>
-                            $$\rho = \frac{m}{V}$$
+                            $$\mu = \frac{F \times t}{A}$$
                         </h3>
                         <p class="home__description">
-                            Em que, $\rho$ é a massa específica, <i>m</i> representa a massa da substância e <i>V</i> o volume por ela ocupado. No Sistema
-                            Internacional de Unidades (SI), a massa é quantificada em kg e o volume em $m^3$, assim, a unidade de massa específica é kg
-                            $m^{-3}$.
+                            Em que, $\mu$ é a viscosidade dinâmica, <i>F</i> é a força, <i>t</i> é o tempo e <i>A</i> a área.
                         </p>
-                        <h3>Exemplos</h3><br>
-                        <li>Água: $\rho$ = 1000 kg $m^{-3}$ = 1 g $cm^{-3}$</li>
-                        <li>Mercúrio: $\rho$ = 13600 kg $m^{-3}$ = 13,6 g $cm^{-3}$</li>
-                        <li>Ar: $\rho$ = 1,2 kg $m^{-3}$ = 0,0012 g $cm^{-3}$</li>
+                        
+                        <li>No Sistema Internacional (SI): N s m$^{-2}$</li>
+                        <li>No Sistema Técnico (ST): kgf s m$^{-2}$</li>
                     </div>
                 </div><br>
                 <div class="wrapper__container container home__data">
-                    <h2>Cálculo de Massa Específica (&rho;)</h2><br>
+                    <h2>Cálculo de Viscosidade dinâmica (&mu;)</h2><br>
                     <form id="fmr1" action="#" class="wrapper__form">
                         <div class="home__description">
-                            <p>Massa [kg]</p>
-                            <input class="wrapper__input" id="massa" type="text" value="1">
+                            <p>Força [N]</p>
+                            <input class="wrapper__input" id="força" type="text" value="1">
                         </div>
                         <div class="home__description">
-                            <p>Volume [m³]</p>
-                            <input class="wrapper__input" id="volume" type="text" value="1">
+                            <p>Tempo [s]</p>
+                            <input class="wrapper__input" id="tempo" type="text" value="1">
+                        </div>
+                        <div class="home__description">
+                            <p>Área [m²]</p>
+                            <input class="wrapper__input" id="area" type="text" value="1">
                         </div>
                         <div class="resultado">
-                            <h4 id="resultado">Massa específica (&rho;) = </h4>
+                            <h4 id="resultado">Viscosidade dinâmica (&mu;) = </h4>
                         </div>
                         <br>
-                            <button type="button" class="button button--flex" onclick="calcular()">Calcular massa específica</button>
+                            <button type="button" class="button button--flex" onclick="calcular()">Calcular viscosidade dinâmica</button>
                     </form>
                 </div>
-            </section>-->
+            </section>
         
             
         <!--==================== FOOTER ====================-->
@@ -182,7 +185,7 @@
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
-        <script src="../../assets/js/massaespecifica/massaespecifica.js"></script>
+        <script src="../../assets/js/visdinamica/visdinamica.js"></script>
         <!--=============== SCROLL REVEAL ===============-->
         <script src="../../assets/js/scrollreveal.min.js"></script>
         
