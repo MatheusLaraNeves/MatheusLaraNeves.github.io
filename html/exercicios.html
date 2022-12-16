@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+
+        <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../index.html" class="nav__link active-link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../index.html#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../index.html#products" class="nav__link" >Motivação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../index.html#faqs" class="nav__link">Conteúdo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../index.html#contact" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="container grid">
+                    <div class="home__data">
+                        <h1>Exercícios práticos</h1>
+                        <br>
+                        <h3>1.</h3>
+                        <p class="home__description">
+                            Sabendo-se que 1500 kg de massa de uma determinada substância ocupa um volume de 2 m³, determine a massa específica, o
+                            peso específico e o peso específico relativo dessa substância.<br> <b>Dados</b>: <br> $\gamma$H$_{2}$O = 10000 N m$^{-3}$, g = 10 m s$^{-2}$
+                        </p>
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Resolução
+                                    </h3>
+                                </header>
+    
+                                <div class="questions__content">
+                                    <p class="questions__description">
+                                        A partir da equação para massa específica, temos:
+                                        $$\rho = \frac{1500 \text{ kg}}{2 \text{ m$^{3}$}} = 750 \text{ kgm$^{-3}$}$$
+                                        O peso específico é então:
+                                        $$\gamma = 750 \text{ kg m$^{-3}$} \times 10 \text{ m s$^{-2}$} = 7500 \text{ N m$^{-3}$}$$
+                                        Por fim, o peso específico relativo fica:
+                                        $$\gamma r = \frac{7500 \text{ N m$^{-3}$}}{10000 \text{ N m$^{-3}$}} = 0,75$$
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h3>2.</h3>
+                        <p class="home__description">
+                            Um reservatório cilíndrico possui diâmetro de base igual a 2 m e altura de 4 m, sabendo-se que o mesmo está totalmente
+                            preenchido com gasolina ($\rho$= 720 kg m$^{-3}$), determine a massa de gasolina presente no reservatório.
+                        </p>
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Resolução
+                                    </h3>
+                                </header>
+    
+                                <div class="questions__content">
+                                    <p class="questions__description">
+                                        O volume de um cilindro:
+                                        $$V = \pi \times 1 ^{2}\times 4 = 12,57 \text{ m$^{3}$}$$
+                                        A massa é então:
+                                        $$m = 720 \text{ kg m$^{-3}$} \times 12,57 \text{ m s$^{3}$} = 9050 \text{ kg}$$
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h3>3.</h3>
+                        <p class="home__description">
+                            A massa específica de uma determinada substância é igual a 740 kg m$^{-3}$, determine o volume ocupado por uma massa de 520
+                            kg dessa substância.
+                        </p>
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Resolução
+                                    </h3>
+                                </header>
+    
+                                <div class="questions__content">
+                                    <p class="questions__description">
+                                        O volume é:
+                                        $$V = \frac{520 \text{ kg}}{740 \text{ kg m$^{-3}$}} = 0,70 \text{ m$^{-3}$}$$
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h3>4.</h3>
+                        <p class="home__description">
+                            Determine a pressão sobre um ponto situado a uma profundidade de 30 m. <br> <b>Dados</b>: <br> Considerar $\rho$Líquido = 1000 kg m$^{-3}$ e $g$ = 9,81 m s$^{-2}$.
+                        </p>
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Resolução
+                                    </h3>
+                                </header>
+    
+                                <div class="questions__content">
+                                    <p class="questions__description">
+                                        $$P = \rho \times g \times h$$
+                                        $$P = 1000 \text{ kg m$^{-3}$} \times 9,81 \text{ m s$^{-2}$} \times 30 \text{ m}$$
+                                        $$P = 294300 \text{ Pa}$$
+                                        $$P = 30 \text{ m.c.a}$$
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h3>5.</h3>
+                        <p class="home__description">
+                            Qual é força sobre um comporta quadrada (1 x 1)m instalada no fundo de um reservatório de água de 2 m de profundidade? <br> <b>Dados</b>: <br> Considerar $\rho$Água = 1000 kg m$^{-3}$ e $g$ = 9,81 m s$^{-2}$.
+                        </p>
+                        <img src="../assets/img/exercicios/ex5.png" alt="" class="product__img">
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Resolução
+                                    </h3>
+                                </header>
+    
+                                <div class="questions__content">
+                                    <p class="questions__description">
+                                        
+                                        $$P = \rho \times g \times h$$
+                                        $$P = 1000 \text{ kg m$^{-3}$} \times 9,81 \text{ m s$^{-2}$} \times 2 \text{ m}$$
+                                        $$P = 19620 \text{ Pa}$$
+                                        $$F = P \times A $$
+                                        $$F = 19620 \text{ Pa} \times 1 \text{ m s$^{-2}$}$$
+                                        $$F = 19.620 \text{ N}$$
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h3>6.</h3>
+                        <p class="home__description">
+                            No manômetro diferencial mostrado na figura abaixo, o fluido A é água, B é óleo e o fluido manométrico é mercúrio. Sendo
+                            h1= 25 cm, h2 = 100 cm, h3 = 80 cm e h4 = 10 cm, determine qual é a diferença de pressão entre os pontos A e B.<br> <b>Dados</b>: <br> $\gamma$H$_{2}$O = 10000 N m$^{-3}$, $\gamma$Hg = 136000 N m$^{-3}$, $\gamma$óleo = 8000 N m$^{-3}$.
+                            
+                        </p>
+                        <img src="../assets/img/exercicios/ex6.png" alt="" class="product__img">
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Resolução
+                                    </h3>
+                                </header>
+    
+                                <div class="questions__content">
+                                    <p class="questions__description">
+                                        <b>Ponto 1:</b>
+                                        $$P1 = PA + \gamma H_{2}O \times h_{1}$$
+                                        <b>Ponto 2:</b>
+                                        $$P2 = PA + \gamma H_{2}O \times h_{1} \times \gamma Hg \times h_{2}$$
+                                        <b>Ponto 3:</b>
+                                        $$P3 = P2 \text{ (mesmo fluído e nível)}$$
+                                        <b>Diferença de pressão:</b>
+                                        $$PB = P3 - \gamma \text{óleo} \times h_{3}$$
+                                        $$PB = PA + (\gamma H_{2}O \times h_{1} \times \gamma Hg \times h_{2}) + \gamma \text{óleo} \times h_{3}$$
+                                        $$PB - PA = (10000 \text{ N m$^{-3}$} \times 0,25 \text{ m} + 136000 \text{ N m$^{-3}$} \times 1 \text{ m}) - 8000 \text{ N m$^{-3}$} \times 0,8 \text{ m}$$
+                                        $$PB - PA = 132100 \text{ Pa} = 132,1 \text{ KPa}$$
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+            </section>
+        
+            
+        <!--==================== FOOTER ====================-->
+        
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                    </a>
+
+                    
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço FACICA</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                        <li class="footer__information">Campos Gerais - MG</li>
+                        <li class="footer__information">37160-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/" class="footer__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">NOME-DO-ORIENTADOR</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+        </footer>
+        
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../assets/js/main.js"></script>
+
+        
+    </body>
+</html>
