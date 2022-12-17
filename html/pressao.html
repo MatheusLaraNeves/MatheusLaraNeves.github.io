@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+
+        <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../index.html" class="nav__link active-link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../index.html#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../index.html#products" class="nav__link" >Motivação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../index.html#faqs" class="nav__link">Conteúdo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../index.html#contact" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Pressão
+                        </h1>
+                        <p class="home__description">
+                            O conceito de pressão foi introduzido a partir da análise da ação de uma força sobre uma superfície. Já nos fluidos, o
+                            peso do fluido hidrostático foi desprezado e a pressão suposta tornou-se igual em todos os pontos. Entretanto, é fato
+                            conhecido que a pressão atmosférica diminui com a altitude e que, num lago ou no mar, aumenta com a profundidade.
+                            Generaliza-se o conceito de pressão e se define num ponto qualquer, como a relação entre a força normal (F) exercida
+                            sobre uma área elementar (A).
+                            <br><br>
+                            <img src="../assets/img/pressao/pressao.png" alt="" class="product__img">
+                            <p style = "text-align:center" class="home__description">Esquema representativo da definiçao de pressão.</p>
+                            Quando você exerce, com a palma da mão, uma força sobre uma superfície (uma parede, por exemplo), dizemos que você está
+                            exercendo uma pressão sobre a parede. Na figura anterior, a força (F) é aplicada em um determinado ponto da superfície e sua
+                            componente normal (Fx) atua realizando pressão. Observe, porém, que na realidade, a força aplicada pela
+                            mão distribui-se sobre uma área, exercendo a pressão. Definimos então pressão como sendo a razão entre a força normal e
+                            a área da superfície considerada. Sendo a pressão expressa por:
+
+                            $$P = \frac{F}{A}$$
+
+                            Em que, suas unidades serão expressas pela razão entre as unidades de força e as unidades de área nos sistemas:
+                            <li>Sistema Internacional (SI): N m$^{-2}$ = Pa</li>
+                            <li>Sistema Técnico (ST): kgf m$^{-2}$</li>
+                        </p>
+                        <br>
+                        <h3>Unidades de pressão</h3>
+                        <p class="home__description">
+                            As principais unidades de pressão e suas equivalências são:<br>
+                            10330 kgf m$^{-2}$ = 1,033 kgf cm$^{-2}$ = 10,33 m.c.a. = 101325 Pa = 101,325 kPa = 760 mmHg = 1,013 bar = 14,7 psi = 1 atm 
+                        </p>
+                    </div>
+                </div>
+                
+                    <div class="questions__container container grid">
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <a href="../html/pressao/piezometrico.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Manômetro de tubo piezométrico
+                                    </h3>
+                                </header>
+                                </a>    
+                            </div>
+
+                            <div class="questions__item">
+                                <a href="../html/pressao/tubou.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Manômetro de tubo em "U"
+                                    </h3>
+                                </header>
+                            </a>
+                            </div>
+                        </div>
+
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <a href="../html/pressao/diferencialpressao.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Medição de diferencial de pressão<br> (Manômetro Tipo "U")
+                                    </h3>
+                                </header>
+                            </a>
+                            </div>
+
+                            <div class="questions__item">
+                                <a href="../html/pressao/bourdon.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Manômetro metálico tipo "Bourdon" e <br> manômetro digital
+                                    </h3>
+                                </header>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                                            
+
+                
+            
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                    </a>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço FACICA</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                        <li class="footer__information">Campos Gerais - MG</li>
+                        <li class="footer__information">37160-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/" class="footer__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">NOME-DO-ORIENTADOR</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../assets/js/main.js"></script>
+
+        
+    </body>
+</html>
