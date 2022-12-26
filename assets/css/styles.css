@@ -474,7 +474,7 @@ the website, in dark theme
 /*=============== STEPS ===============*/
 .steps__bg{
   background-color: var(--first-color);
-  padding: 3rem 2rem 2rem;
+  padding: 3rem 2rem 1rem;
   border-radius: 1rem;
 }
 
