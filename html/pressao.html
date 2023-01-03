@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="../../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
 
         <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
     </head>
@@ -29,26 +29,26 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="../../index.html" class="nav__logo">
+                <a href="../index.html" class="nav__logo">
                     <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="../../index.html" class="nav__link active-link">Início</a>
+                            <a href="../index.html" class="nav__link active-link">Início</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../../index.html#about" class="nav__link">Sobre</a>
+                            <a href="../index.html#about" class="nav__link">Sobre</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../../index.html#products" class="nav__link" >Motivação</a>
+                            <a href="../index.html#products" class="nav__link" >Motivação</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../../index.html#faqs" class="nav__link">Conteúdo</a>
+                            <a href="../index.html#faqs" class="nav__link">Conteúdo</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../../index.html#contact" class="nav__link">Contato</a>
+                            <a href="../index.html#contact" class="nav__link">Contato</a>
                         </li>
                     </ul>
 
@@ -73,53 +73,101 @@
             <section class="home">
                 <div class="container grid">
                     <div class="home__data">
-                        <h1>Viscosidade cinemática (v)</h1>
+                        <h1 class="home__title">
+                            Pressão
+                        </h1>
                         <p class="home__description">
-                            A Viscosidade cinemática (v) é definida como a relação entre a viscosidade dinâmica e a massa específica do fluído.<br>
+                            O conceito de pressão foi introduzido a partir da análise da ação de uma força sobre uma superfície. Já nos fluidos, o
+                            peso do fluido hidrostático foi desprezado e a pressão suposta tornou-se igual em todos os pontos. Entretanto, é fato
+                            conhecido que a pressão atmosférica diminui com a altitude e que, num lago ou no mar, aumenta com a profundidade.
+                            Generaliza-se o conceito de pressão e se define num ponto qualquer, como a relação entre a força normal (F) exercida
+                            sobre uma área elementar (A).
+                            <br><br>
+                            <img src="../assets/img/pressao/pressao.png" alt="" class="product__img">
+                            <p style = "text-align:center" class="home__description">Esquema representativo da definiçao de pressão.</p>
+                            Quando você exerce, com a palma da mão, uma força sobre uma superfície (uma parede, por exemplo), dizemos que você está
+                            exercendo uma pressão sobre a parede. Na figura anterior, a força (F) é aplicada em um determinado ponto da superfície e sua
+                            componente normal (Fx) atua realizando pressão. Observe, porém, que na realidade, a força aplicada pela
+                            mão distribui-se sobre uma área, exercendo a pressão. Definimos então pressão como sendo a razão entre a força normal e
+                            a área da superfície considerada. Sendo a pressão expressa por:
+
+                            $$P = \frac{F}{A}$$
+
+                            Em que, suas unidades serão expressas pela razão entre as unidades de força e as unidades de área nos sistemas:
+                            <li>Sistema Internacional (SI): N m$^{-2}$ = Pa</li>
+                            <li>Sistema Técnico (ST): kgf m$^{-2}$</li>
                         </p>
-                        
-                        <h3>
-                            $$v = \frac{\mu}{\rho}$$
-                        </h3>
-                        <p class="home__description">
-                            Em que, v é a viscosidade cinemática, $\mu$ representa a viscosidade dinâmica e $\rho$ a massa específica. 
-                        </p>
-                        <li>No Sistema Internacional (SI): m$^{2}$ s$^{-1}$</li><br>
-                        <h3>Observação:</h3>
-                        <p class="home__description">A viscosidade é medida por um equipamento chamado <b>Viscosímetro</b>.</p>
-                    </div>
-                </div><br>
-                <div class="wrapper__container container home__data">
-                    <h2>Cálculo de Viscosidade cinemática (v)</h2><br>
-                    <form id="fmr1" action="#" class="wrapper__form">
-                        <div class="home__description">
-                            <p>Viscosidade dinâmica [Ns/m²]</p>
-                            <input class="wrapper__input" id="visdinamica" type="text" value="1">
-                        </div>
-                        <div class="home__description">
-                            <p>Massa específica [kg/m³]</p>
-                            <input class="wrapper__input" id="massaespecifica" type="text" value="1">
-                        </div>
-                        <div class="resultado">
-                            <h4 id="resultado">Viscosidade cinemática (v) = </h4>
-                        </div>
                         <br>
-                            <button type="button" class="button button--flex" onclick="calcular()">Calcular viscosidade cinemática</button>
-                    </form>
+                        <h3>Unidades de pressão</h3>
+                        <p class="home__description">
+                            As principais unidades de pressão e suas equivalências são:<br>
+                            10330 kgf m$^{-2}$ = 1,033 kgf cm$^{-2}$ = 10,33 m.c.a. = 101325 Pa = 101,325 kPa = 760 mmHg = 1,013 bar = 14,7 psi = 1 atm 
+                        </p>
+                    </div>
                 </div>
+                
+                    <div class="questions__container container grid">
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <a href="../html/pressao/piezometrico.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Manômetro de tubo piezométrico
+                                    </h3>
+                                </header>
+                                </a>    
+                            </div>
+
+                            <div class="questions__item">
+                                <a href="../html/pressao/tubou.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Manômetro de tubo em "U"
+                                    </h3>
+                                </header>
+                            </a>
+                            </div>
+                        </div>
+
+                        <div class="questions__group">
+                            <div class="questions__item">
+                                <a href="../html/pressao/diferencialpressao.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Medição de diferencial de pressão<br> (Manômetro Tipo "U")
+                                    </h3>
+                                </header>
+                            </a>
+                            </div>
+
+                            <div class="questions__item">
+                                <a href="../html/pressao/bourdon.html">
+                                <header class="questions__header">
+                                    <i class="ri-add-line questions__icon"></i>
+                                    <h3 class="questions__item-title">
+                                        Manômetro metálico tipo "Bourdon" e <br> manômetro digital
+                                    </h3>
+                                </header>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
             </section>
-        
+
+                                            
+
+                
             
         <!--==================== FOOTER ====================-->
-        
         <footer class="footer section">
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
                         <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
                     </a>
-
-                    
                 </div>
 
                 <div class="footer__content">
@@ -174,17 +222,16 @@
             <p class="footer__copy">&#169; Matheus Lara Neves.</p>
         </footer>
         
-        
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
-        <script src="../../assets/js/viscinematica/viscinematica.js"></script>
+
         <!--=============== SCROLL REVEAL ===============-->
-        <script src="../../assets/js/scrollreveal.min.js"></script>
+        <script src="../assets/js/scrollreveal.min.js"></script>
         
         <!--=============== MAIN JS ===============-->
-        <script src="../../assets/js/main.js"></script>
+        <script src="../assets/js/main.js"></script>
 
         
     </body>

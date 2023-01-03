@@ -73,30 +73,39 @@
             <section class="home">
                 <div class="container grid">
                     <div class="home__data">
-                        <h1>Viscosidade</h1>
+                        <h1>Manômetro de tubo em "U"</h1>
                         <p class="home__description">
-                            Quando dois sólidos em movimento são postos em contato de forma a haver um movimento relativo entre eles aparece uma
-                            força de atrito que se desenvolve na área de contato entre os mesmos, força essa que tem a direção da tangente à
-                            superfície de contato e sentido contrário ao do movimento. Nesse caso, está em jogo o coeficiente de atrito entre os
-                            dois sólidos, determinante no cálculo da força de atrito. No caso dos fluidos em escoamento, a situação é análoga, pois
-                            uma parte do fluido se move em relação à outra, o que faz aparecer uma força de atrito na superfície de separação entre
-                            as duas porções de fluido que estão em contato. É fato notório que essa força depende da natureza dos fluidos em
-                            movimento, sendo maior em alguns fluidos e menor em outros.
-                            <br><br>
-                            <img src="../../assets/img/viscosidade/viscosidade.jpg" alt="" class="product__img">
-                            <p style = "text-align:center" class="home__description">A viscosidade é a propriedade física que caracteriza a resistência de um fluido ao escoamento. Foto: Rachel/flickr.com</p>
-                            Assim, parece haver uma propriedade relacionada com a maior ou menor facilidade de um fluido se movimentar, a fluidez.
-                            Tal propriedade é caracterizada pela viscosidade do fluido. A
-                            força que deve ser aplicada a um fluido para que haja movimento em ralação a um contorno sólido é denominada de força
-                            viscosa. Sendo assim, a viscosidade é a propriedade de um fluido, devido à coesão e interação entre moléculas, que
-                            oferecem resistências para deformação de cisalhamento. Fluidos diferentes deformam com valores diferentes para uma mesma
-                            tensão de cisalhamento. Fluidos com uma alta viscosidade deformam mais lentamente que fluidos com uma viscosidade baixa.
-                            Quanto mais viscosa a massa, mais difícil de escoar e maior o seu coeficiente de viscosidade.<br>
+                            Usando um tubo em “U”, podemos medir a pressão de líquidos e gases com o mesmo instrumento. O manômetro em “U” é
+                            conectado como na figura abaixo, sendo preenchido com um fluido chamado fluido manométrico. O fluido cuja pressão será
+                            medida deve ter uma massa específica menor que a do fluido manométrico. Os fluidos não devem misturar-se.
+                            <br>
+
+                            <img src="../../assets/img/pressao/tubou.png" alt="" class="product__img">
+                            <p style = "text-align:center" class="home__description">Manômetro em "U".</p>
+
+                            Pressão em B = pressão em Coesão
+
+                            $$PC = PB$$
+
+                            Para a coluna do lado esquerdo do manômetro:
+                            Pressão em B = pressão em A + pressão da altura ($h_{1}$) de fluido que deve ser medido:
+                            
+                            $$PB=PA + \Upsilon \times h_{1}$$
+
+                            Para a coluna do lado direito do manômetro:
+                            Pressão em C = pressão em D + pressão da altura ($h_{2}$) do fluido manométrico:
+
+                            $$PC = P_{atm} + \Upsilon_{man} \times h_{2}$$
+
+                            Como estamos medindo pressão relativa podemos subtrair $P_{atm}$, resultando em:
+
+                            $$PB = PC$$
+
+                            $$PA = \Upsilon_{man} \times h_{2} + \Upsilon \times h_{1}$$
                         </p>
-                    </div>   
+                    </div>
                 </div>
             </section>
-        
             
         <!--==================== FOOTER ====================-->
         
@@ -167,7 +176,6 @@
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
-        <script src="../../assets/js/massaespecifica/massaespecifica.js"></script>
         <!--=============== SCROLL REVEAL ===============-->
         <script src="../../assets/js/scrollreveal.min.js"></script>
         
