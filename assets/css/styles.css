@@ -418,6 +418,9 @@ the website, in dark theme
 .about__img{
   width: 280px;
   justify-self: center;
+
+  
+  
 }
 
 .about__title{
@@ -426,10 +429,13 @@ the website, in dark theme
 
 .about__description{
   margin-bottom: var(--mb-2);
+  
 }
 
 .about__details{
   display: grid;
+  text-align: justify; 
+  text-justify: auto;
   row-gap: 1rem;
   margin-bottom: var(--mb-2-5);
 }
@@ -680,6 +686,7 @@ the website, in dark theme
 .contact__data{
   display: grid;
   row-gap: 2rem;
+  
 }
 
 .contact__subtitle{
@@ -817,6 +824,7 @@ the website, in dark theme
 .footer__data{
   display: grid;
   row-gap: .75rem;
+  
 }
 
 .footer__information{
