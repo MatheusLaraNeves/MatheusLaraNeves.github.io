@@ -345,7 +345,11 @@ the website, in dark theme
   position: relative;
   transform: rotate(90deg);
 }
-
+.about__data {
+  width: 400px;
+  text-align: justify;
+  text-justify: auto;
+}
 .home__social-follow::after{
   content: '';
   position: absolute;
