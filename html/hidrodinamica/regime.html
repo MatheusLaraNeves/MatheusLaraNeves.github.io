@@ -88,20 +88,49 @@
                                   fluidos, ele descobriu que não só a velocidade, mas também o diâmetro da canalização e o fluido 
                                   escoante influenciam no regime de escoamento. 
                             Assim, ele desenvolveu uma expressão para caracterizar o regime de escoamento.
+
+                            $$Rey = \frac{V . D}{v}$$
                             
-                            <br><br> <br>
-                            Rey = V . D /  v 
-                            <br><br><br>
-                      
-                            Rey = Número de Reynolds, adimensional;
-                            V = Velocidade média de escoamento, m s-1;
-                            D = Diâmetro da canalização, m; e
-                            Ѵ = Viscosidade cinética do fluido, m2 s-1. 
+                            Em que:
+                            
+                            <li>$Rey$ é o Número de Reynolds, adimensional;</li>
+                            <li>$V$ é a velocidade média de escoamento, m s$^{-1}$;</li>
+                            <li>$D$ é o diâmetro da canalização, m; </li>
+                            <li>$V$ é a viscosidade cinética do fluido, m$^{2}$ s$^{-1}$.</li>
+                            
+                            <br>
                             Para definir o regime de escoamento, basta calcular o número de Reynolds e caracterizá-lo pelos limites:
-                            Se Rey < 2.000 -> regime laminar
-                            Se Rey > 4.000 -> regime turbulento
-                            Se 2.000 < Rey < 4.000 -> zona de transição   
-                            
+                            Se $Rey$ é menor do que 2.000, o regime é laminar. Se $Rey$ é maior do que 4.000, o rregime é turbulento.
+                            Se $Rey$ está entre 2.000 e 4.000, então é zona de transição.
+                        </p>
+                    </div>
+                </div><br>
+
+                <div class="wrapper__container container home__data">
+                    <h2>Cálculo do Regime de escoamento (Rey)</h2><br>
+                    <form id="fmr1" action="#" class="wrapper__form">
+                        <div class="home__description">
+                            <p>Velocidade média de escoamento [m s$^{-1}$]</p>
+                            <input class="wrapper__input" id="velmedia" type="text" value="1">
+                        </div>
+                        <div class="home__description">
+                            <p>Diâmetro da canalização [m]</p>
+                            <input class="wrapper__input" id="diametro" type="text" value="1">
+                        </div>
+                        <div class="home__description">
+                            <p>Viscosidade cinético do fluido [m$^{2}$ s$^{-1}$]</p>
+                            <input class="wrapper__input" id="viscosidade" type="text" value="1">
+                        </div>
+                        <div class="resultado">
+                            <h4 id="resultado">Regime de escoamento (Rey) = </h4>
+                        </div>
+                        <div class="resultado">
+                            <h4 id="tipo_de_regime"></h4>
+                        </div>
+                        <br>
+                            <button type="button" class="button button--flex" onclick="calcular()">Calcular massa específica</button>
+                    </form>
+                </div>
             
         <!--==================== FOOTER ====================-->
         
@@ -152,6 +181,7 @@
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
+        <script src="../../assets/js/regime/regime.js"></script>
         <!--=============== SCROLL REVEAL ===============-->
         <script src="../../assets/js/scrollreveal.min.js"></script>
         
