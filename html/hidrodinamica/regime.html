@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+
+        <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../index.html" class="nav__link active-link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#products" class="nav__link" >Motivação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#faqs" class="nav__link">Conteúdo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#contact" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="container grid">
+                    <div class="home__data">
+                        <h1>Regimes de escoamento</h1>
+                        <p class="home__description">
+                            
+                            No século XVIII, os cientistas já notavam que a turbulência podia variar dependendo das condições de 
+                            escoamento. Osborne Reynolds realizou uma experiência para entender o comportamento dos fluidos em escoamento.
+                             Ele utilizou um líquido de contraste (corante) e variou a velocidade de escoamento no conduto.
+                              Ele observou que, quando a velocidade era baixa, o líquido escoava de forma ordenada, chamando este
+                               estado de "laminar". Quando aumentou a velocidade, o escoamento se tornou desordenado, 
+                               chamando este estado de "turbulento". Ele também notou que há uma faixa de velocidade onde é 
+                               difícil definir o regime de escoamento, chamando essa faixa de "zona de transição". Ele identificou
+                                duas velocidades críticas: uma para a passagem do regime laminar para o turbulento e outra para a
+                                 passagem do regime turbulento para o laminar. Ao repetir a experiência com diferentes diâmetros e
+                                  fluidos, ele descobriu que não só a velocidade, mas também o diâmetro da canalização e o fluido 
+                                  escoante influenciam no regime de escoamento. 
+                            Assim, ele desenvolveu uma expressão para caracterizar o regime de escoamento.
+                            
+                            <br><br> <br>
+                            Rey = V . D /  v 
+                            <br><br><br>
+                      
+                            Rey = Número de Reynolds, adimensional;
+                            V = Velocidade média de escoamento, m s-1;
+                            D = Diâmetro da canalização, m; e
+                            Ѵ = Viscosidade cinética do fluido, m2 s-1. 
+                            Para definir o regime de escoamento, basta calcular o número de Reynolds e caracterizá-lo pelos limites:
+                            Se Rey < 2.000 -> regime laminar
+                            Se Rey > 4.000 -> regime turbulento
+                            Se 2.000 < Rey < 4.000 -> zona de transição   
+                            
+            
+        <!--==================== FOOTER ====================-->
+        
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                    </a>
+
+                    
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço FACICA</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                        <li class="footer__information">Campos Gerais - MG</li>
+                        <li class="footer__information">37160-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/" class="footer__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>               
+            </div>
+
+            <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+        </footer>
+        
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../../assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../../assets/js/main.js"></script>
+
+        
+    </body>
+</html>
