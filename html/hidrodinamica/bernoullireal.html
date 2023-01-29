@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================MATHJAX================-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../index.html" class="nav__logo">
+                <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../../index.html" class="nav__link active-link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../index.html#about" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../index.html#products" class="nav__link">Motivação</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../index.html#faqs" class="nav__link">Conteúdo</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../index.html#contact" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home">
+            <div class="container grid">
+                <div class="home__data">
+                    <h1>Teorema de Bernoulli para fluídos reais</h1>
+                    <p class="home__description">
+
+                        A experiência do Teorema de Bernoulli para fluídos reais (naturais) se afastam do modelo
+                        perfeito, pois a viscosidade e
+                        o atrito externo são as principais responsáveis pela diferença de energia. Por conseqüência das
+                        forças de atrito, o
+                        escoamento ocorre com uma perda de energia, denominado de perda de carga (energia que se dissipa
+                        em forma de calor).
+                        <br><br>
+                        Por isso se introduz na equação de Bernoulli um termo corretivo hf (perda de carga):
+
+                        $$\frac{V_1^{2}}{2g} + \frac{P_1}{\gamma} + Z_1 = \frac{V_2^{2}}{2g} + \frac{P_2}{\gamma} + Z_2
+                        + hf$$
+
+                        <br><br>
+
+                        Sendo assim, neste caso o teorema de BERNOULLI considera que “para um escoamento contínuo e
+                        permanente, a carga total de
+                        energia, em qualquer ponto de uma linha de corrente é igual a carga total em qualquer ponto a
+                        juzante da mesma linha de
+                        corrente, mais a perda de carga entre os dois pontos”.
+                        <br><br>
+                        <img src="../../assets/img/bernoulli/bernoullireal.gif" alt="" class="product__img">
+                    <p style="text-align:center" class="home__description">Demonstração de teorema de Bernoulli para
+                        fluídos reais.</p>
+
+                    </p>
+                </div>
+            </div>
+            </div>
+            
+
+
+            <!--==================== FOOTER ====================-->
+
+            <footer class="footer section">
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">
+                            <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                        </a>
+
+
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Endereço FACICA</h3>
+
+                        <ul class="footer__data">
+                            <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                            <li class="footer__information">Campos Gerais - MG</li>
+                            <li class="footer__information">37160-000</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                        <ul class="footer__data">
+                            <div class="footer__social">
+                                <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                                <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/"
+                                    class="footer__social-link">
+                                    <i class="ri-linkedin-line"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+            </footer>
+
+
+            <!--=============== SCROLL UP ===============-->
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class="ri-arrow-up-fill scrollup__icon"></i>
+            </a>
+            <!--=============== SCROLL REVEAL ===============-->
+            <script src="../../assets/js/scrollreveal.min.js"></script>
+
+            <!--=============== MAIN JS ===============-->
+            <script src="../../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

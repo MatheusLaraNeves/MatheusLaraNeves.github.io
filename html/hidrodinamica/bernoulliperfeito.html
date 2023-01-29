@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+
+        <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../index.html" class="nav__link active-link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#products" class="nav__link" >Motivação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#faqs" class="nav__link">Conteúdo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../index.html#contact" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="container grid">
+                    <div class="home__data">
+                        <h1>Teorema de BERNOULLI para um fluído perfeito</h1>
+                        <p class="home__description">
+                            
+                            O teorema de BERNOULLI traduz o princípio de conservação de energia, considerando que “no escoamento permanente de um
+                            fluído perfeito a energia total permanece constante, ou seja, a soma das energias: Cinética ($V_2/2g$); Piezométrica ($P/\gamma$)
+                            e Geométrica (Z) são constantes numa linha de corrente”.
+                            <li>1. Energia Cinética: É o estado de energia determinado pelo movimento (velocidade) do fluido.</li>
+                            <li>2. Energia Piezométrica: Corresponde ao trabalho potencial das forças de pressão que atuam no escoamento do fluido.</li>
+                            <li>3. Energia Geométrica: É o estado de energia do sistema devido a sua posição no campo da gravidade em relação a um plano
+                            horizontal de referência.</li>
+                            <br><br>
+                            A figura abaixo apresenta as diferentes cargas de energia que ocorrem com um fluído perfeito em uma linha de corrente.
+                            
+                            <br><br>
+                            <img src="../../assets/img/bernoulli/perfeitos.jpg" alt="" class="product__img">
+                            <p style = "text-align:center" class="home__description">Demonstração do teorema de Bernoulli para fluídos perfeitos.</p>
+
+                            No caso do fluído perfeito, ou ideal, não existe viscosidade, não havendo dissipação de energia durante o seu movimento.
+                            Na hipótese de não dissipação de energia, a soma das três componentes da energia total é constante:
+
+                            $$\frac{V_{1}^{2}}{2g} + \frac{P_{1}}{\gamma} + Z_1 = \frac{V_{2}^{2}}{2g} + \frac{P_2}{\gamma} + Z_2 \Rightarrow \text{constante}$$
+
+
+                            Importante notar que cada um desses termos é expresso em unidade linear (metros), constituindo-se o que se denomina
+                            carga ou altura ou energia por unidade de peso. 
+                            <li>$V_2/2g$ = (m$^2$/s$^2$) / (m/s$^2$) = m (carga de velocidade ou cinética)</li>
+                            <li>P/$\gamma$ = (kgf/m$^2$) / (kgf/m$^3$) = m (carga de pressão)</li>
+                            <li>Z = m (carga geométrica ou de posição)</li>
+                            
+                            <br><br>
+                            
+                            A equação de Bernoulli é uma das equações mais importantes e úteis da Hidráulica tendo as seguintes restrições para sua
+                            aplicação:
+                            <br><br>
+                            <li>Escoamento em regime permanente;</li>
+                            <li>Massa específica constante (escoamento incompressível);</li>
+                            <li>Forças de atrito desprezíveis;</li>
+                            <li>Escoamento ao longo de uma única linha de corrente (dimensões infinitesimais);</li>
+                            <li>Não pode existir transferência de calor para dentro ou fora do sistema;</li>
+                            <li>Não podem existir dispositivos mecânicos (bombas, ventiladores, turbinas) entre as seções de interesse que possam
+                            agregar ou absorver energia do sistema já que a equação estabelece que a energia total do fluido é constante.</li>
+
+
+                        
+            
+        <!--==================== FOOTER ====================-->
+        
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                    </a>
+
+                    
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço FACICA</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                        <li class="footer__information">Campos Gerais - MG</li>
+                        <li class="footer__information">37160-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/" class="footer__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>               
+            </div>
+
+            <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+        </footer>
+        
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../../assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../../assets/js/main.js"></script>
+
+        
+    </body>
+</html>
