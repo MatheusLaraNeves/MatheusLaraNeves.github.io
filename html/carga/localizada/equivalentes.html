@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,13 @@
             };
             </script>
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="../../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="../../../assets/img/agrofacica.icon.jpg" type="image/x-icon">
 
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="../../assets/css/styles.css">
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
 
         <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
     </head>
@@ -29,26 +29,26 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="../../index.html" class="nav__logo">
+                <a href="../../../index.html" class="nav__logo">
                     <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="../../index.html" class="nav__link active-link">Início</a>
+                            <a href="../../../index.html" class="nav__link active-link">Início</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../../index.html#about" class="nav__link">Sobre</a>
+                            <a href="../../../index.html#about" class="nav__link">Sobre</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../../index.html#products" class="nav__link" >Motivação</a>
+                            <a href="../../../index.html#products" class="nav__link" >Motivação</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../../index.html#faqs" class="nav__link">Conteúdo</a>
+                            <a href="../../../index.html#faqs" class="nav__link">Conteúdo</a>
                         </li>
                         <li class="nav__item">
-                            <a href="../../index.html#contact" class="nav__link">Contato</a>
+                            <a href="../../../index.html#contact" class="nav__link">Contato</a>
                         </li>
                     </ul>
 
@@ -73,60 +73,32 @@
             <section class="home">
                 <div class="container grid">
                     <div class="home__data">
-                        <h1 class="home__title">
-                           Perda de Carga Localizada
-                        </h1>
+                        <h1>Método dos comprimentos equivalentes</h1>
                         <p class="home__description">
-                            Adicionalmente às perdas de carga contínuas que ocorrem ao longo das tubulações, têm-se perturbações localizadas,
-                            denominadas perdas de carga localizadas, causadas por singularidades do tipo curva, junção, válvula, medidor, etc., que
-                            também provocam dissipação de energia. Algumas vezes como acontece nas instalações hidráulicas prediais, a perda de
-                            carga localizada é mais importante do que a perda de carga contínua, devido ao grande número de conexões e aparelhos,
-                            relativamente ao comprimento de tubulação. Entretanto, no caso de tubulações muito longas, com vários quilômetros de
-                            extensão, como nas adutoras, a perda de carga localizada pode ser desprezada. Existem dois métodos para a determinação
-                            da perda de carga localizada: o método direto e o método dos comprimentos equivalentes ou virtuais.
+                            
+                            Este processo consiste, para efeito de cálculo somente, na substituição das singularidades presentes, geradoras das
+                            perdas de carga localizadas, por um tubo de diâmetro, rugosidade e comprimento tal que proporcione a mesma perda de
+                            carga original das singularidades. A soma dos comprimentos equivalentes das peças de um determinado trecho de tubulação,
+                            acrescida do comprimento real desta é chamada de comprimento virtual, que multiplicado pela perda de carga unitária
+                            proporciona a perda de carga total (contínua e localizada). Os comprimentos equivalentes correspondentes às peças mais
+                            frequentes nas instalações hidráulicas são mostrados na tabela abaixo para conexões de metal e PVC.
+                            <br><br>
 
-                        </p>
-                    </div>
-                </div>
+                            <img src="../../../assets/img/carga/localizada/comprimentos.png" alt="" class="product__img">
+                            <p style = "text-align:center" class="home__description">Esquema representativo da definiçao de pressão.</p>
+                            
                 
-                    <div class="questions__container container grid">
-                        <div class="questions__group">
-                            <div class="questions__item">
-                                <a href="../carga/localizada/direto.html">
-                                <header class="questions__header">
-                                    <i class="ri-add-line questions__icon"></i>
-                                    <h3 class="questions__item-title">
-                                        Método direto
-                                    </h3>
-                                </header>
-                                </a>    
-                            </div>
-                        </div>
-
-                        <div class="questions__group">
-                            <div class="questions__item">
-                                <a href="../carga/localizada/equivalentes.html">
-                                <header class="questions__header">
-                                    <i class="ri-add-line questions__icon"></i>
-                                    <h3 class="questions__item-title">
-                                        Método dos comprimentos equivalentes
-                                    </h3>
-                                </header>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-            
-
             
         <!--==================== FOOTER ====================-->
+        
         <footer class="footer section">
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
                         <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
                     </a>
+
+                    
                 </div>
 
                 <div class="footer__content">
@@ -155,25 +127,23 @@
                             </a>
                         </div>
                     </ul>
-                </div>
-
-
-                
+                </div>               
             </div>
 
             <p class="footer__copy">&#169; Matheus Lara Neves.</p>
         </footer>
         
+        
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
-
+        <script src="../../../assets/js/carga/localizada/direto.js"></script>
         <!--=============== SCROLL REVEAL ===============-->
-        <script src="../../assets/js/scrollreveal.min.js"></script>
+        <script src="../../../assets/js/scrollreveal.min.js"></script>
         
         <!--=============== MAIN JS ===============-->
-        <script src="../../assets/js/main.js"></script>
+        <script src="../../../assets/js/main.js"></script>
 
         
     </body>
