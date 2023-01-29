@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../../../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+
+        <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../../index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../../index.html" class="nav__link active-link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#products" class="nav__link" >Motivação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#faqs" class="nav__link">Conteúdo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#contact" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="container grid">
+                    <div class="home__data">
+                        <h1>Equação de HAZEN WILLIAMS</h1>
+                        <p class="home__description">
+                            Essa fórmula talvez seja a mais utilizada nos países de influência americana. Ela originou-se de um
+                            trabalho experimental com grande número de tratamentos (vários diâmetros, vazões e materiais) e repetições. Ela deve ser
+                            utilizada para escoamento de água à temperatura ambiente, para tubulações com diâmetro maior ou igual a 2” ou 50 mm e
+                            para regime turbulento:
+
+                            $$hf = 10,643 . Q^{1,85} . C^{-1,85} . D^{-4,87} . L \quad \text{ou} \quad Q = 0,276.C.D^{2,63}.j^{-0,54}$$
+
+                            onde:
+                            <li>j = perda de carga unitária, (mm$^{-1}$)</li>
+                            <li>hf = perda de carga, (m.c.a.)</li>
+                            <li>D = diâmetro do tubo (m)</li>
+                            <li>Q = vazão (m$^{3}$s$^{-1}$)</li>
+                            <li>L = comprimento da tubulação (m)</li>
+                            <li>C = coeficiente que depende da natureza (material e estado) das paredes dos tubos.</li>
+                            
+                            <br>
+                            A tabela abaixo mostra alguns valores do coeficiente C para a equação de HAZEN WILLIAMS
+                            <br><br>
+                            <div class="container grid">
+                            <style type="home__data">
+                                
+                                .tg  {border-collapse:collapse;border-spacing:0;}
+                                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg .tg-baqh{text-align:center;vertical-align:top}
+                                .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                                </style>
+                                <table class="tg">
+                                <thead>
+                                <tr>
+                                    <th class="tg-amwm">Material do tubo</th>
+                                    <th class="tg-amwm">Novos</th>
+                                    <th class="tg-amwm">Usados<br>(cerca de 10 anos)</th>
+                                    <th class="tg-amwm">Usados<br>(cerca de 20 anos)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="tg-baqh">Aço corrugado (chapa ondulada)</td>
+                                    <td class="tg-baqh">60</td>
+                                    <td class="tg-baqh">-</td>
+                                    <td class="tg-baqh">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Aço galvanizado roscado</td>
+                                    <td class="tg-baqh">125</td>
+                                    <td class="tg-baqh">100</td>
+                                    <td class="tg-baqh">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Aço rebitado novos</td>
+                                    <td class="tg-baqh">110</td>
+                                    <td class="tg-baqh">90</td>
+                                    <td class="tg-baqh">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Aço soldado, comum (revestido c/ betume)</td>
+                                    <td class="tg-baqh">125</td>
+                                    <td class="tg-baqh">110</td>
+                                    <td class="tg-baqh">90</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Aço soldado com revestimento epoxi</td>
+                                    <td class="tg-baqh">140</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">115</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Chumbo</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">120</td>
+                                    <td class="tg-baqh">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Cimento amianto</td>
+                                    <td class="tg-baqh">140</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Cobre</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">135</td>
+                                    <td class="tg-baqh">130</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Concreto, bom acabamento</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">-</td>
+                                    <td class="tg-baqh">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Concreto, acabamento comum</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">120</td>
+                                    <td class="tg-baqh">110</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Ferro fundido, revestido com epoxi</td>
+                                    <td class="tg-baqh">140</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Ferro fundido, revestido com cimento</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">120</td>
+                                    <td class="tg-baqh">105</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Grés cerâmico, vidrado (manilhas)</td>
+                                    <td class="tg-baqh">110</td>
+                                    <td class="tg-baqh">110</td>
+                                    <td class="tg-baqh">110</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Latão</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">130</td>
+                                    <td class="tg-baqh">130</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Madeira em aduelas</td>
+                                    <td class="tg-baqh">120</td>
+                                    <td class="tg-baqh">120</td>
+                                    <td class="tg-baqh">110</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Tijolos, conduto bem executado</td>
+                                    <td class="tg-baqh">100</td>
+                                    <td class="tg-baqh">95</td>
+                                    <td class="tg-baqh">90</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Vidro</td>
+                                    <td class="tg-baqh">140</td>
+                                    <td class="tg-baqh">-</td>
+                                    <td class="tg-baqh">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-baqh">Plástico ou PVC</td>
+                                    <td class="tg-baqh">140</td>
+                                    <td class="tg-baqh">135</td>
+                                    <td class="tg-baqh">135</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    
+                </div><br>
+                
+                
+
+            
+        <!--==================== FOOTER ====================-->
+        
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                    </a>
+
+                    
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço FACICA</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                        <li class="footer__information">Campos Gerais - MG</li>
+                        <li class="footer__information">37160-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/" class="footer__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>               
+            </div>
+
+            <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+        </footer>
+        
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        <script src="../../../assets/js/carga/localizada/direto.js"></script>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../../../assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../../../assets/js/main.js"></script>
+
+        
+    </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../../../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+
+        <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../../index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../../index.html" class="nav__link active-link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#products" class="nav__link" >Motivação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#faqs" class="nav__link">Conteúdo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#contact" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="container grid">
+                    <div class="home__data">
+                        <h1>Equação de Darcy-Weisbach ou Universal</h1>
+                        <p class="home__description">
+                            Com o intuito de estabelecer leis que possam reger as perdas de carga em tubulações, estudos e pesquisas vêm sendo
+                            realizadas acerca de dois séculos. Atualmente a expressão mais precisa e utilizada universalmente para análise de
+                            escoamento em tubos, e que foi proposta em 1845, é a conhecida equação de DARCY-WEISBACH. Esta fórmula é de uso geral,
+                            tanto serve para escoamento em regime turbulento quanto para o laminar, e é também utilizada para toda a gama de
+                            diâmetros, conforme expressa pela seguinte equação:
+
+                            $$hf = \frac{f.V^{2}}{D.2.g}.L \quad \text{ou} \quad hf = \frac{8.f.Q^{2}}{\pi^{2}.g.D^{5}}$$
+
+                            onde:
+                            <li>Hf = perda de carga (m.c.a)</li>
+                            <li>L = comprimento do tubo (m)</li>
+                            <li>D = diâmetro do tubo (m)</li>
+                            <li>Q = vazão (m$^{3}$s$^{-1}$)</li>
+                            <li>g = aceleração da gravidade (ms$^{-2}$)</li>
+                            <li>V = velocidade do fluido (ms$^{-1}$)</li>
+                            <li>f = coeficiente de atrito</li>
+                            <br>
+                            O coeficiente de atrito (f) depende do Nº de REYNOLDS (Rey) e da Rugosidade relativa (ε/D); ε -> Rugosidade absoluta
+                            <br><br>
+                            <div class="container grid">
+                            <style type="home__data">
+                                .tg  {border-collapse:collapse;border-spacing:0;}
+                                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                  overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+                                .tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+                                </style>
+                                <table class="tg">
+                                <thead>
+                                  <tr>
+                                    <th class="tg-7btt">Material</th>
+                                    <th class="tg-7btt">Rugosidade equivalente (mm)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="tg-c3ow">Aço, revestimento asfalto quente</td>
+                                    <td class="tg-c3ow">0,3 a 0,9</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Aço, revestimento esmalte centrifugado</td>
+                                    <td class="tg-c3ow">0,01 a 0,06</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Aço enferrujado ligeiramente</td>
+                                    <td class="tg-c3ow">0,15 a 0,3</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Aço enferrujado</td>
+                                    <td class="tg-c3ow">0,4 a 0,6</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Aço muito enferrujado</td>
+                                    <td class="tg-c3ow">0,9 a 2,4</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Ferro galvanizado novo, com costura</td>
+                                    <td class="tg-c3ow">0,15 a 0,2</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Ferro galvanizado novo, sem costura</td>
+                                    <td class="tg-c3ow">0,06 a 0,15</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Ferro fundido revest. asfalto</td>
+                                    <td class="tg-c3ow">0,12 a 0,20</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Ferro fundido com crostas</td>
+                                    <td class="tg-c3ow">1,5 a 3,0</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">PVC e Cobre</td>
+                                    <td class="tg-c3ow">0,015</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-c3ow">Cimenti-amianto, novo</td>
+                                    <td class="tg-c3ow">0,05 a 0,10</td>
+                                  </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                            <br><br>
+                                Na literatura moderna aparecem várias expressões para o fator de atrito (f). Nenhuma delas é distinta quanto à concepção
+                                geral. A diferença entre elas está no valor e na colocação de uma constante. Sendo elas empíricas, deve-se observar a
+                                faixa de validade de cada uma delas antes de seu emprego. Para o regime laminar (Rey < 2000) a fórmula recomendada está
+                                expressa na Equação:
+
+                                $$f = \frac{64}{Rey}$$
+
+
+                                BLASIUS, que foi o primeiro pesquisador a correlacionar as experiências com tubos lisos em escoamento turbulento, apresentou 
+                                os resultados por uma fórmula empírica que é válida para Rey até 100000. A fórmula de BLASIUS é apresentada conforme Equação:
+
+                                $$f = \frac{0,316}{Rey^{0,25}}$$
+
+                                Outra equação válida para região do escoamento turbulento no domínio de Rey entre 5000 e 200000 é dada pela Equação:
+
+                                $$f = \frac{0,184}{Rey^{0,2}}$$
+
+                                Abaixo segue uma Equação mais exata, válida num intervalo mais amplo, para Rey entre 3000 e 300000:
+
+                                $$f = 0,0056 + \frac{0,5}{Rey^{0,32}}$$
+
+                                SWAMEE E JAIN (1993) apresentaram uma expressão geral (Equação 14) que calcula o fator de atrito (f) sem restrições quanto ao 
+                                regime de escoamento, número de Reynolds e rugosidade relativa, reproduzindo bem o diagrama de MOODY
+
+                                $$f = \Biggl\{\biggl( \frac{64}{Rey} \biggl)^{8} + 9,5 \biggl[ ln \biggl( \frac{\epsilon}{3,7D} + \frac{5,74}{Rey^{0,9}}\biggl) - \biggl( \frac{2500}{Rey} \biggl)^{6}\biggl]^{-16}\Biggl\}^{0,125}$$
+
+                                A resolução destas equações para o fator de atrito exige a aplicação de métodos iterativos de cálculo numérico, que até bem pouco 
+                                tempo apresentavam dificuldades matemáticas e computacionais. Porém, com o advento das máquinas calculadoras programáveis, bem como 
+                                das planilhas de cálculos eletrônicas, estes procedimentos vêm se tornando cada vez mais simples. Entretanto, por estes motivos de 
+                                dificuldade na resolução rápida deste equacionamento, tem-se usado para a tabulação dos dados uma forma gráfica, proposta por MOODY 
+                                em 1944 e denominado de Diagrama de MOODY.
+
+                                <img src="../../../assets/img/carga/continua/moody.jpg" alt="" class="product__img">
+                            <p style = "text-align:center" class="home__description">Diagrama de MOODY para determinação do fator de atrito (f).</p>
+                        </div>
+                    
+                </div><br>
+                
+                
+
+            
+        <!--==================== FOOTER ====================-->
+        
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                    </a>
+
+                    
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço FACICA</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                        <li class="footer__information">Campos Gerais - MG</li>
+                        <li class="footer__information">37160-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/" class="footer__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>               
+            </div>
+
+            <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+        </footer>
+        
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        <script src="../../../assets/js/carga/localizada/direto.js"></script>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../../../assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../../../assets/js/main.js"></script>
+
+        
+    </body>
+</html>
