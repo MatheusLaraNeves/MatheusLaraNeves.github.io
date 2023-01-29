@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================MATHJAX================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+            </script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../../../assets/img/agrofacica.icon.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+
+        <title>Apostila de Hidráulica Automatizada - Matheus Lara Neves</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="../../../index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Apostila de Hidráulica Automatizada 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../../index.html" class="nav__link active-link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#products" class="nav__link" >Motivação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#faqs" class="nav__link">Conteúdo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../../../index.html#contact" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="container grid">
+                    <div class="home__data">
+                        <h1>Método Direto</h1>
+                        <p class="home__description">
+                            
+                            A perda de carga localizada pode ser calculada diretamente 
+
+                            $$hfloc = K . \frac{V^{2}}{2.g}$$
+                            
+                            Em que:
+                            
+                            <li>$hfloc$ é a perda de carga localizada (m.c.a.);</li>
+                            <li>$K$ é o coeficiente que depende da geometria e da singularidade do acessório;</li>
+                            <li>$V$ é a velocidade média de escoamento, ms$^{-1}$; </li>
+                            <li>$g$ é a acelaração da gravidade, ms$^{2}$.</li>
+                            <br>    
+                            A tabela abaixo aparesenta valores aproximados do coeficiente de perda de carga localizada K.
+                            <br>
+                            <div class = "container grid">
+                                <style type="home__data">
+                                    .tg  {border-collapse:collapse;border-spacing:0;}
+                                    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                      overflow:hidden;padding:10px 5px;word-break:normal;}
+                                    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                    .tg .tg-baqh{text-align:center;vertical-align:top}
+                                    .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+                                    </style>
+                                    <table class="tg">
+                                    <thead>
+                                      <tr>
+                                        <th class="tg-amwm">Peça</th>
+                                        <th class="tg-amwm">K</th>
+                                        <th class="tg-amwm">Peça</th>
+                                        <th class="tg-amwm">K</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="tg-baqh">Ampliação gradual</td>
+                                        <td class="tg-baqh">0,30</td>
+                                        <td class="tg-baqh">Pequena derivação</td>
+                                        <td class="tg-baqh">0,03</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Comporta aberta</td>
+                                        <td class="tg-baqh">1,00</td>
+                                        <td class="tg-baqh">Redução gradual</td>
+                                        <td class="tg-baqh">0,15</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Controlador de vazão</td>
+                                        <td class="tg-baqh">2,50</td>
+                                        <td class="tg-baqh">Saída de canalização</td>
+                                        <td class="tg-baqh">1,00</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Cotovelo 45°</td>
+                                        <td class="tg-baqh">0,40</td>
+                                        <td class="tg-baqh">Tê de passagem direta</td>
+                                        <td class="tg-baqh">0,60</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Cotovelo 90°</td>
+                                        <td class="tg-baqh">0,90</td>
+                                        <td class="tg-baqh">Tê de saída bilateral</td>
+                                        <td class="tg-baqh">1,80</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Crivo</td>
+                                        <td class="tg-baqh">0,75</td>
+                                        <td class="tg-baqh">Tê de saída de lado</td>
+                                        <td class="tg-baqh">1,30</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Curva 22,5°</td>
+                                        <td class="tg-baqh">0,10</td>
+                                        <td class="tg-baqh">Válvula borboleta aberta</td>
+                                        <td class="tg-baqh">0,30</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Curva 45°</td>
+                                        <td class="tg-baqh">0,20</td>
+                                        <td class="tg-baqh">Válvula de ângulo aberta</td>
+                                        <td class="tg-baqh">5,00</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Curva 90°</td>
+                                        <td class="tg-baqh">0,40</td>
+                                        <td class="tg-baqh">Válvula de gaveta aberta</td>
+                                        <td class="tg-baqh">0,20</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Entrada de borda</td>
+                                        <td class="tg-baqh">1,00</td>
+                                        <td class="tg-baqh">Válvula de pé</td>
+                                        <td class="tg-baqh">1,75</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Entrada normal</td>
+                                        <td class="tg-baqh">0,50</td>
+                                        <td class="tg-baqh">Válvula de retenção</td>
+                                        <td class="tg-baqh">2,50</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Junção</td>
+                                        <td class="tg-baqh">0,40</td>
+                                        <td class="tg-baqh">Válvula globo aberta</td>
+                                        <td class="tg-baqh">10,00</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tg-baqh">Medidor venturi</td>
+                                        <td class="tg-baqh">2,50</td>
+                                        <td class="tg-baqh"></td>
+                                        <td class="tg-baqh"></td>
+                                      </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                    </div>
+                </div><br>
+                
+                <div class="wrapper__container container home__data">
+                    <h2>Cálculo da Perda de Carga Localizada</h2><br>
+                    <form id="fmr1" action="#" class="wrapper__form">
+                        <div class="home__description">
+                            <p>Coeficiente K</p>
+                            <input class="wrapper__input" id="coefk" type="text" value="1">
+                        </div>
+                        <div class="home__description">
+                            <p>Velocidade média de escoamento [ms$^{-1}$]</p>
+                            <input class="wrapper__input" id="velmedia" type="text" value="1">
+                        </div>
+                        <div class="resultado">
+                            <h4 id="resultado">Perda de carga localizada = </h4>
+                        </div>
+                        <br>
+                            <button type="button" class="button button--flex" onclick="calcular()">Calcular Perda de carga localizada</button>
+                    </form>
+                </div>
+
+            
+        <!--==================== FOOTER ====================-->
+        
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Apostila de Hidráulica Automatizada
+                    </a>
+
+                    
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço FACICA</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Rua Santa Teresinha, 389 - Centro</li>
+                        <li class="footer__information">Campos Gerais - MG</li>
+                        <li class="footer__information">37160-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Matheus Lara Neves</h3>
+
+                    <ul class="footer__data">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/matheuslara.n" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.github.com/MatheusLaraN" class="footer__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-lara-bb891b21a/" class="footer__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>               
+            </div>
+
+            <p class="footer__copy">&#169; Matheus Lara Neves.</p>
+        </footer>
+        
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        <script src="../../../assets/js/carga/localizada/direto.js"></script>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../../../assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../../../assets/js/main.js"></script>
+
+        
+    </body>
+</html>
